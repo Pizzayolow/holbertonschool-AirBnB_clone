@@ -20,6 +20,7 @@
     font-size: 30px;
     text-align: center;
     margin-top: 5px;
+    flex-grow: 20;
 }
 
 .places ul {
@@ -44,4 +45,5 @@
     align-items: center;
     padding: 3px;
     margin-left: 10px;
+    flex-grow: 1;
 }
