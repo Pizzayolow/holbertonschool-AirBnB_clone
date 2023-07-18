@@ -26,7 +26,7 @@
 }
   
 .filters .button:hover {
-    opacity: 90%;
+    opacity: 0.9;
 }
   
 .filters .locations,
@@ -55,28 +55,54 @@
     margin-top: 0;
 }
 
-.locations:hover .popover {
+.locations:hover .popover,
+.amenities:hover .popover {
     display: block;
+}
+
+.locations .popover {
+    display: none;
     position: absolute;
+    right: 0;
+    left: 0;
+    background-color: #fafafa;
+    border: 1px solid var(--color-light-grey);
+    border-radius: 4px;
+    list-style-type: none;
+    z-index: 1;
+    color: var(--color-dark-grey);
+
+    /* locations padding */
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-bottom: 35px;
+
+    /* locations margin */
+    margin: 0;
+    margin-left: -51px;
+    margin-right: -1px;
 }
   
-.locations .popover {
-      display: none;
-      position: absolute;
-      right: 0;
-      left: 0;
-      padding-top: 10px;
-      padding-left: 30px;
-      margin: 0;
-      margin-left: -50px;
-      background-color: #fafafa;
-      border: 1px solid var(--color-light-grey);
-      border-radius: 4px;
-      list-style-type: none;
-      z-index: 1;
-    
-      /* temp */
-      color: var(--color-dark-grey);
+.amenities .popover {
+    display: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+    background-color: #fafafa;
+    border: 1px solid var(--color-light-grey);
+    border-radius: 4px;
+    list-style-type: none;
+    z-index: 1;
+    color: var(--color-dark-grey);
+
+    /* amenities padding */
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-bottom: 45px;
+
+    /* amenities margin */
+    margin: 0;
+    margin-left: -51px;
 }
 
 .popover li {
@@ -86,4 +112,9 @@
 .popover ul {
     margin-top: -15px;
     margin-bottom: 10px;
+}
+
+.locations .popover li ul li {
+    margin-left: -20px;
+    padding-bottom: 5px;
 }
