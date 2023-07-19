@@ -112,3 +112,7 @@
   .user {
     margin-top: 15px;
   }
+
+  .description {
+    min-height: 150px;
+  }
